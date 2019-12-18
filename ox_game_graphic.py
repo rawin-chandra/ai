@@ -1,3 +1,7 @@
+#this code is not for commercial use
+#free licensed by ครูเอส
+#www.facebook.com/teacherwinzatori
+
 import pygame
 
 pygame.init()
