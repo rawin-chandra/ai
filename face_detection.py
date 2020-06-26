@@ -6,6 +6,8 @@ https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetec
 
 create by T. Rawin (T. S)
 if you use webcam you should change VideoCapture(0) to VideoCapture(1)
+
+and download face.xml to the same directory as this file
 '''
 
 
