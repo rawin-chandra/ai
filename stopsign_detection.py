@@ -21,20 +21,13 @@ face = cv2.CascadeClassifier('stop_data.xml')
 while(True):
    
     ret, frame = cap.read()    
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)    
-
-     
-    found = face.detectMultiScale(gray,minSize =(20, 20)) 
-
-    amount_found = len(found) 
-
-    if amount_found != 0: 	
-	
-	for (x, y, width, height) in found: 		
-		
-		cv2.rectangle(frame, (x, y),(x + height, y + width),(0, 255, 0), 5) 
-
-   
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) 
+    found = face.detectMultiScale(gray,minSize =(20, 20))
+    amount_found = len(found)
+    if amount_found != 0:
+		for (x, y, width, height) in found:
+			cv2.rectangle(frame, (x, y),(x + height, y + width),(0, 255, 0), 5)
+			
     cv2.imshow('frame',frame) 
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
