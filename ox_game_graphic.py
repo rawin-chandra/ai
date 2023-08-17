@@ -1,6 +1,10 @@
 #this code is not for commercial use
 #free licensed by ครูเอส
 #www.facebook.com/teacherwinzatori
+#req:
+#python 3
+#pygame download at pygame.org
+#please credit me :-)
 
 import pygame
 
